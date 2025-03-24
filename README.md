@@ -23,13 +23,13 @@ My solutions to LeetCode problems, organized by data structure and algorithm.
 | Category | Easy | Medium | Hard | Total |
 |----------|------|--------|------|-------|
 | Array | 0 | 0 | 0 | 0 |
-| Binary Search | 1 | 0 | 0 | 1 |
+| Binary Search | 2 | 0 | 0 | 2 |
 | Dynamic Programming | 0 | 0 | 0 | 0 |
 | Graph | 0 | 0 | 0 | 0 |
 | Linked List | 0 | 0 | 0 | 0 |
 | String | 0 | 0 | 0 | 0 |
 | Tree | 0 | 0 | 0 | 0 |
-| **Total** | **1** | **0** | **0** | **1** |
+| **Total** | **2** | **0** | **0** | **2** |
 
 
 

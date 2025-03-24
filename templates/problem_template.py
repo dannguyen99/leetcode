@@ -12,6 +12,7 @@ Examples:
 Constraints:
 [Copy constraints here]
 """
+from utils.test_runner import run_tests
 
 
 class Solution:
@@ -34,18 +35,13 @@ class Solution:
         pass
 
 
-# Test cases
 if __name__ == "__main__":
     solution = Solution()
+    test_cases = [
+        # Format: ((param1, param2), expected_output)
+        ((arg1_1, arg2_1), expected_output_1),
+        ((arg1_2, arg2_2), expected_output_2),
+        # Add more test cases as needed
+    ]
 
-    # Test case 1
-    assert (
-        solution.solution_method(param1, param2) == expected_output
-    ), "Test case 1 failed"
-
-    # Test case 2
-    assert (
-        solution.solution_method(param1, param2) == expected_output
-    ), "Test case 2 failed"
-
-    print("All test cases passed!")
+    run_tests(solution.solution_method, test_cases)
