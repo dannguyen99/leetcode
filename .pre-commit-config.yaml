@@ -15,3 +15,13 @@ repos:
       hooks:
           - id: uv-lock
           - id: uv-export
+    - repo: local
+      hooks:
+      -   id: update-leetcode-progress
+          name: Update LeetCode progress
+          entry: python progress_tracker.py
+          language: python
+          files: 'problems/.*\.py$'
+          pass_filenames: false
+          always_run: true
+          additional_dependencies: []
