@@ -44,10 +44,13 @@ class Solution:
     ) -> Optional[ListNode]:
         """
         Approach:
-        [Explain your approach here]
+        1. Created a dummy pointer, and a current pointer.
+        2. The current pointer starts at dummy and help build the list.
+        3. Traverse the two lists, attach appropriate nodes to the current pointer
+        4. Add the remaining node of the remaining list to the end.
 
-        Time Complexity: O(?)
-        Space Complexity: O(?)
+        Time Complexity: O(n)
+        Space Complexity: O(1)
 
         Args:
             list1: ListNode - Head of the first sorted linked list
