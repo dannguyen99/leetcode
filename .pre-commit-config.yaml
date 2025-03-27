@@ -19,7 +19,7 @@ repos:
       hooks:
       -   id: update-leetcode-progress
           name: Update LeetCode progress
-          entry: python progress_tracker.py
+          entry: uv run progress_tracker.py
           language: python
           files: 'problems/.*\.py$'
           pass_filenames: false

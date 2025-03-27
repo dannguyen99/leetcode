@@ -9,6 +9,7 @@ dependencies = [
     "ipdb>=0.13.13",
     "ipykernel>=6.29.5",
     "ipython>=8.34.0",
+    "pandas>=2.2.3",
     "pip>=25.0.1",
     "pre-commit>=4.2.0",
     "pytest>=8.3.5",
