@@ -23,7 +23,6 @@ Constraints:
 - s consists of printable ASCII characters.
 """
 
-from typing import List
 from utils.test_runner import run_tests
 
 
