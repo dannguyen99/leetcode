@@ -26,10 +26,10 @@ My solutions to LeetCode problems, organized by data structure and algorithm.
 | Binary Search | 2 | 0 | 0 | 2 |
 | Dynamic Programming | 0 | 0 | 0 | 0 |
 | Graph | 0 | 0 | 0 | 0 |
-| Linked List | 1 | 1 | 0 | 2 |
+| Linked List | 2 | 1 | 0 | 3 |
 | String | 0 | 0 | 0 | 0 |
 | Tree | 0 | 0 | 0 | 0 |
-| **Total** | **4** | **1** | **0** | **5** |
+| **Total** | **5** | **1** | **0** | **6** |
 
 
 
