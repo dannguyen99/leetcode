@@ -22,14 +22,14 @@ My solutions to LeetCode problems, organized by data structure and algorithm.
 
 | Category | Easy | Medium | Hard | Total |
 |----------|------|--------|------|-------|
-| Array | 1 | 0 | 0 | 1 |
+| Array | 2 | 0 | 0 | 2 |
 | Binary Search | 2 | 0 | 0 | 2 |
 | Dynamic Programming | 0 | 0 | 0 | 0 |
 | Graph | 0 | 0 | 0 | 0 |
 | Linked List | 2 | 1 | 0 | 3 |
 | String | 1 | 0 | 0 | 1 |
 | Tree | 0 | 0 | 0 | 0 |
-| **Total** | **6** | **1** | **0** | **7** |
+| **Total** | **7** | **1** | **0** | **8** |
 
 
 
