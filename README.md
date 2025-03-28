@@ -27,9 +27,9 @@ My solutions to LeetCode problems, organized by data structure and algorithm.
 | Dynamic Programming | 0 | 0 | 0 | 0 |
 | Graph | 0 | 0 | 0 | 0 |
 | Linked List | 3 | 1 | 0 | 4 |
-| String | 3 | 0 | 0 | 3 |
+| String | 3 | 1 | 0 | 4 |
 | Tree | 0 | 0 | 0 | 0 |
-| **Total** | **10** | **1** | **0** | **11** |
+| **Total** | **10** | **2** | **0** | **12** |
 
 
 
