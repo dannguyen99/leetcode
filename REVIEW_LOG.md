@@ -13,3 +13,4 @@
 | 21. Merge Two Sorted Lists | Linked List | Easy | 2025-03-27 | 2025-03-27 | |
 | 125. Valid Palindrome | String | Easy | 2025-03-27 | 2025-03-27 | |
 | 242. Valid Anagram | String | Easy | 2025-03-27 | 2025-03-27 | |
+| 20. Valid Parentheses | String | Easy | 2025-03-28 | 2025-03-28 | |
