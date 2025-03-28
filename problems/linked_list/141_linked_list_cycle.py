@@ -41,6 +41,7 @@ class ListNode:
         self.next = None
 
 
+from utils.linked_list_utils import create_linked_list
 from utils.test_runner import run_tests
 
 
@@ -73,25 +74,6 @@ class Solution:
             slow = slow.next
             fast = fast.next.next
         return True
-
-
-# Helper function to create linked list with optional cycle
-def create_linked_list(values, pos):
-    if not values:
-        return None
-
-    # Create nodes
-    nodes = [ListNode(val) for val in values]
-
-    # Link nodes
-    for i in range(len(nodes) - 1):
-        nodes[i].next = nodes[i + 1]
-
-    # Create cycle if pos is valid
-    if 0 <= pos < len(nodes):
-        nodes[-1].next = nodes[pos]
-
-    return nodes[0]
 
 
 if __name__ == "__main__":
