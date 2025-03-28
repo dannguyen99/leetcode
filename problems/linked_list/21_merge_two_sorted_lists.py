@@ -35,6 +35,7 @@ class ListNode:
 
 
 from typing import Optional
+from utils.linked_list_utils import create_linked_list
 from utils.test_runner import run_tests
 
 
@@ -81,16 +82,6 @@ class Solution:
         return dummy.next
 
 
-# Helper function to create linked list from list
-def create_linked_list(values):
-    if not values:
-        return None
-    nodes = [ListNode(val) for val in values]
-    for i in range(len(nodes) - 1):
-        nodes[i].next = nodes[i + 1]
-    return nodes[0]
-
-
 if __name__ == "__main__":
     solution = Solution()
 
@@ -120,3 +111,21 @@ if __name__ == "__main__":
         return linked_list_to_list(result)
 
     run_tests(test_runner, test_cases)
+
+
+def test_mergeTwoLists():
+    solution = Solution()
+    assert linked_list_to_list(
+        solution.mergeTwoLists(
+            create_linked_list([1, 2, 4]), create_linked_list([1, 3, 4])
+        )
+    ) == [1, 1, 2, 3, 4, 4]
+    assert (
+        linked_list_to_list(
+            solution.mergeTwoLists(create_linked_list([]), create_linked_list([]))
+        )
+        == []
+    )
+    assert linked_list_to_list(
+        solution.mergeTwoLists(create_linked_list([]), create_linked_list([0]))
+    ) == [0]
