@@ -18,11 +18,12 @@ Constraints:
 - -10^4 < nums[i], target < 10^4
 - nums is sorted in ascending order.
 """
-from utils.test_runner import run_tests
+import pytest
+from typing import List, Tuple
 
 
 class Solution:
-    def search(self, nums, target):
+    def search(self, nums: List[int], target: int) -> int:
         """
         Approach:
         Use binary search to find the target:
@@ -50,11 +51,14 @@ class Solution:
         return -1
 
 
-if __name__ == "__main__":
+test_cases = [
+    ([-1, 0, 3, 5, 9, 12], 9, 4),
+    ([-1, 0, 3, 5, 9, 12], 2, -1),
+    ([5], 5, 0),
+]
+
+
+@pytest.mark.parametrize("nums, target, expected_output", test_cases)
+def test_search(nums: List[int], target: int, expected_output: int):
     solution = Solution()
-    test_cases = [
-        (([-1, 0, 3, 5, 9, 12], 9), 4),
-        (([-1, 0, 3, 5, 9, 12], 2), -1),
-        (([5], 5), 0),
-    ]
-    run_tests(solution.search, test_cases)
+    assert solution.search(nums, target) == expected_output

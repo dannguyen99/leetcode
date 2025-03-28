@@ -27,26 +27,15 @@ Example 3:
 Input: head = [1], pos = -1
 Output: false
 Explanation: There is no cycle in the linked list.
-
-Constraints:
-- The number of the nodes in the list is in the range [0, 10^4].
-- -10^5 <= Node.val <= 10^5
-- pos is -1 or a valid index in the linked list.
 """
 
-# Definition for singly-linked list
-class ListNode:
-    def __init__(self, x):
-        self.val = x
-        self.next = None
-
-
-from utils.linked_list_utils import create_linked_list
-from utils.test_runner import run_tests
+import pytest
+from typing import Optional
+from utils.linked_list_utils import ListNode, create_linked_list
 
 
 class Solution:
-    def hasCycle(self, head):
+    def hasCycle(self, head: Optional[ListNode]) -> bool:
         """
         Approach:
         Use Floyd's Cycle-Finding Algorithm (Tortoise and Hare):
@@ -76,19 +65,16 @@ class Solution:
         return True
 
 
-if __name__ == "__main__":
+test_cases = [
+    ([3, 2, 0, -4], 1, True),
+    ([1, 1], 0, True),
+    ([1], -1, False),
+    ([], -1, False),
+]
+
+
+@pytest.mark.parametrize("input_list, pos, expected_output", test_cases)
+def test_hasCycle(input_list: list[int], pos: int, expected_output: bool):
     solution = Solution()
-
-    test_cases = [
-        # Format: ((head, pos), expected_output)
-        ((create_linked_list([3, 2, 0, -4], 1), 1), True),
-        ((create_linked_list([1, 2], 0), 0), True),
-        ((create_linked_list([1], -1), -1), False),
-        ((create_linked_list([], -1), -1), False),
-    ]
-
-    # Custom test runner for linked list problems
-    def test_runner(head, _):
-        return solution.hasCycle(head)
-
-    run_tests(test_runner, test_cases)
+    head = create_linked_list(input_list, pos)
+    assert solution.hasCycle(head) == expected_output

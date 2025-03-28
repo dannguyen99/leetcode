@@ -22,11 +22,12 @@ Constraints:
 - -10^4 <= nums[i] <= 10^4
 - nums is sorted in non-decreasing order.
 """
-from utils.test_runner import run_tests
+import pytest
+from typing import List, Tuple
 
 
 class Solution:
-    def sortedSquares(self, nums):
+    def sortedSquares(self, nums: List[int]) -> List[int]:
         """
         Approach:
         [Your approach description here]
@@ -57,15 +58,16 @@ class Solution:
         return result
 
 
-if __name__ == "__main__":
-    solution = Solution()
-    test_cases = [
-        # Format: ((nums,), expected_output)
-        (([-4, -1, 0, 3, 10],), [0, 1, 9, 16, 100]),
-        (([-7, -3, 2, 3, 11],), [4, 9, 9, 49, 121]),
-        (([0, 2, 4, 6, 8],), [0, 4, 16, 36, 64]),
-        (([-5, -3, -2, -1],), [1, 4, 9, 25]),
-        (([1],), [1]),
-    ]
+test_cases = [
+    ([-4, -1, 0, 3, 10], [0, 1, 9, 16, 100]),
+    ([-7, -3, 2, 3, 11], [4, 9, 9, 49, 121]),
+    ([0, 2, 4, 6, 8], [0, 4, 16, 36, 64]),
+    ([-5, -3, -2, -1], [1, 4, 9, 25]),
+    ([1], [1]),
+]
 
-    run_tests(solution.sortedSquares, test_cases)
+
+@pytest.mark.parametrize("nums, expected_output", test_cases)
+def test_sortedSquares(nums: List[int], expected_output: List[int]):
+    solution = Solution()
+    assert solution.sortedSquares(nums) == expected_output

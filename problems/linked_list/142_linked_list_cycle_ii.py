@@ -31,19 +31,13 @@ Constraints:
 - pos is -1 or a valid index in the linked list.
 """
 
-# Definition for singly-linked list
-class ListNode:
-    def __init__(self, x):
-        self.val = x
-        self.next = None
-
-
-from utils.linked_list_utils import create_linked_list
-from utils.test_runner import run_tests
+import pytest
+from typing import Optional
+from utils.linked_list_utils import ListNode, create_linked_list, linked_list_to_list
 
 
 class Solution:
-    def detectCycle(self, head):
+    def detectCycle(self, head: Optional[ListNode]) -> Optional[ListNode]:
         """
         Approach:
         1. Use Floyd's Cycle Detection Algorithm:
@@ -80,29 +74,20 @@ class Solution:
         return None
 
 
-if __name__ == "__main__":
+test_cases = [
+    ([3, 2, 0, -4], 1, 2),
+    ([1, 2], 0, 1),
+    ([1], -1, None),
+    ([], -1, None),
+]
+
+
+@pytest.mark.parametrize("input_list, pos, expected_val", test_cases)
+def test_detectCycle(input_list: list[int], pos: int, expected_val: Optional[int]):
     solution = Solution()
-
-    test_cases = [
-        ((create_linked_list([3, 2, 0, -4], 1), 1), 1),
-        ((create_linked_list([1, 2], 0), 0), 0),
-        ((create_linked_list([1], -1), -1), None),
-        ((create_linked_list([], -1), -1), None),
-    ]
-
-    def test_runner(head, pos):
-        result_node = solution.detectCycle(head)
-        if not result_node:
-            return None
-
-        # Convert the result node to a position
-        if pos >= 0:  # If we expect a cycle
-            curr = head
-            idx = 0
-            while curr != result_node:
-                curr = curr.next
-                idx += 1
-            return idx
-        return None
-
-    run_tests(test_runner, test_cases)
+    head = create_linked_list(input_list, pos)
+    result = solution.detectCycle(head)
+    if expected_val is None:
+        assert result is None
+    else:
+        assert result.val == expected_val

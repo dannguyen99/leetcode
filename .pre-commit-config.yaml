@@ -25,3 +25,9 @@ repos:
           pass_filenames: false
           always_run: true
           additional_dependencies: []
+      -   id: pytest-check
+          name: pytest-check
+          entry: pytest problems
+          language: system
+          pass_filenames: false
+          always_run: true

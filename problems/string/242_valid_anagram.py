@@ -22,7 +22,8 @@ Constraints:
 - s and t consist of lowercase English letters.
 """
 
-from utils.test_runner import run_tests
+import pytest
+from typing import Tuple
 
 
 class Solution:
@@ -61,18 +62,18 @@ class Solution:
         return True
 
 
-if __name__ == "__main__":
-    solution = Solution()
-    test_cases = [
-        # Format: ((s, t), expected_output)
-        ((("anagram", "nagaram")), True),
-        ((("rat", "car")), False),
-        ((("a", "ab")), False),
-        ((("ab", "a")), False),
-        ((("aacc", "ccac")), False),  # Added tricky case
-        ((("listen", "silent")), True),
-        ((("aabb", "bbaa")), True),
-    ]
+test_cases = [
+    (("anagram", "nagaram"), True),
+    (("rat", "car"), False),
+    (("a", "ab"), False),
+    (("ab", "a"), False),
+    (("aacc", "ccac"), False),  # Added tricky case
+    (("listen", "silent"), True),
+    (("aabb", "bbaa"), True),
+]
 
-    # Make sure the runner is called with the correct method name
-    run_tests(solution.isAnagram, test_cases)
+
+@pytest.mark.parametrize("input_strings, expected_output", test_cases)
+def test_isAnagram(input_strings: Tuple[str, str], expected_output: bool):
+    solution = Solution()
+    assert solution.isAnagram(*input_strings) == expected_output

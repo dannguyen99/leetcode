@@ -23,7 +23,7 @@ Constraints:
 - s consists of printable ASCII characters.
 """
 
-from utils.test_runner import run_tests
+import pytest
 
 
 class Solution:
@@ -68,13 +68,15 @@ class Solution:
         return True
 
 
-if __name__ == "__main__":
-    solution = Solution()
-    test_cases = [
-        (("A man, a plan, a canal: Panama",), True),
-        (("race a car",), False),
-        ((" ",), True),
-        (("0P",), False),
-    ]
+test_cases = [
+    ("A man, a plan, a canal: Panama", True),
+    ("race a car", False),
+    (" ", True),
+    ("0P", False),
+]
 
-    run_tests(solution.isPalindrome, test_cases)
+
+@pytest.mark.parametrize("input_string, expected_output", test_cases)
+def test_isPalindrome(input_string: str, expected_output: bool):
+    solution = Solution()
+    assert solution.isPalindrome(input_string) == expected_output

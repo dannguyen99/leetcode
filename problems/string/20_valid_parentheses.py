@@ -36,7 +36,7 @@ Constraints:
 - 1 <= s.length <= 10^4
 - s consists of parentheses only '()[]{}'.
 """
-from utils.test_runner import run_tests
+import pytest
 
 
 class Solution:
@@ -85,20 +85,21 @@ class Solution:
         return not stack  # Returns True if stack is empty, False otherwise
 
 
-if __name__ == "__main__":
-    solution = Solution()
-    test_cases = [
-        (("()",), True),
-        (("()[]{}",), True),
-        (("(]",), False),
-        (("([)]",), False),
-        (("{[]}",), True),
-        (("]",), False),
-        (("",), True),
-        (("{",), False),
-        (("((",), False),
-        (("){",), False),
-    ]
+test_cases = [
+    ("()", True),
+    ("()[]{}", True),
+    ("(]", False),
+    ("([)]", False),
+    ("{[]}", True),
+    ("]", False),
+    ("", True),
+    ("{", False),
+    ("((", False),
+    ("){", False),
+]
 
-    # Make sure the runner is called with the correct method name
-    run_tests(solution.isValid, test_cases)
+
+@pytest.mark.parametrize("input_string, expected_output", test_cases)
+def test_isValid(input_string: str, expected_output: bool):
+    solution = Solution()
+    assert solution.isValid(input_string) == expected_output

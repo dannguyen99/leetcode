@@ -27,16 +27,9 @@ Constraints:
 - Both list1 and list2 are sorted in non-decreasing order.
 """
 
-# Definition for singly-linked list
-class ListNode:
-    def __init__(self, val=0, next=None):
-        self.val = val
-        self.next = next
-
-
-from typing import Optional
-from utils.linked_list_utils import create_linked_list
-from utils.test_runner import run_tests
+import pytest
+from typing import Optional, List
+from utils.linked_list_utils import ListNode, create_linked_list, linked_list_to_list
 
 
 class Solution:
@@ -82,50 +75,19 @@ class Solution:
         return dummy.next
 
 
-if __name__ == "__main__":
+test_cases = [
+    ([1, 2, 4], [1, 3, 4], [1, 1, 2, 3, 4, 4]),
+    ([], [], []),
+    ([], [0], [0]),
+]
+
+
+@pytest.mark.parametrize("list1_input, list2_input, expected_output", test_cases)
+def test_mergeTwoLists(
+    list1_input: List[int], list2_input: List[int], expected_output: List[int]
+):
     solution = Solution()
-
-    # Helper to convert linked list to value list for easier comparison
-    def linked_list_to_list(node):
-        values = []
-        current = node
-        while current:
-            values.append(current.val)
-            current = current.next
-        return values
-
-    test_cases = [
-        # Format: ((list1, list2), expected_output)
-        (
-            (create_linked_list([1, 2, 4]), create_linked_list([1, 3, 4])),
-            [1, 1, 2, 3, 4, 4],
-        ),
-        ((create_linked_list([]), create_linked_list([])), []),
-        ((create_linked_list([]), create_linked_list([0])), [0]),
-    ]
-
-    # Custom test runner for linked list problems
-    def test_runner(list1, list2):
-        result = solution.mergeTwoLists(list1, list2)
-        # Convert result to list for comparison
-        return linked_list_to_list(result)
-
-    run_tests(test_runner, test_cases)
-
-
-def test_mergeTwoLists():
-    solution = Solution()
-    assert linked_list_to_list(
-        solution.mergeTwoLists(
-            create_linked_list([1, 2, 4]), create_linked_list([1, 3, 4])
-        )
-    ) == [1, 1, 2, 3, 4, 4]
-    assert (
-        linked_list_to_list(
-            solution.mergeTwoLists(create_linked_list([]), create_linked_list([]))
-        )
-        == []
-    )
-    assert linked_list_to_list(
-        solution.mergeTwoLists(create_linked_list([]), create_linked_list([0]))
-    ) == [0]
+    list1 = create_linked_list(list1_input)
+    list2 = create_linked_list(list2_input)
+    result = solution.mergeTwoLists(list1, list2)
+    assert linked_list_to_list(result) == expected_output

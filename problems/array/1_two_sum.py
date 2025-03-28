@@ -28,8 +28,8 @@ Constraints:
 - -10^9 <= target <= 10^9
 - Only one valid answer exists.
 """
-from typing import List
-from utils.test_runner import run_tests
+import pytest
+from typing import List, Tuple
 
 
 class Solution:
@@ -71,18 +71,16 @@ class Solution:
         return []
 
 
-if __name__ == "__main__":
-    solution = Solution()
-    test_cases = [
-        # Format: ((nums, target), expected_output)
-        # Note: LeetCode allows [0, 1] or [1, 0]. We'll stick to one for the runner.
-        ((([2, 7, 11, 15], 9)), [0, 1]),
-        ((([3, 2, 4], 6)), [1, 2]),
-        ((([3, 3], 6)), [0, 1]),
-        # Add more test cases if you like
-        ((([-1, -2, -3, -4, -5], -8)), [2, 4]),
-        ((([0, 4, 3, 0], 0)), [0, 3]),
-    ]
+test_cases = [
+    ([2, 7, 11, 15], 9, [0, 1]),
+    ([3, 2, 4], 6, [1, 2]),
+    ([3, 3], 6, [0, 1]),
+    ([-1, -2, -3, -4, -5], -8, [2, 4]),
+    ([0, 4, 3, 0], 0, [0, 3]),
+]
 
-    # Make sure the runner is called with the correct method name
-    run_tests(solution.twoSum, test_cases)
+
+@pytest.mark.parametrize("nums, target, expected_output", test_cases)
+def test_twoSum(nums: List[int], target: int, expected_output: List[int]):
+    solution = Solution()
+    assert solution.twoSum(nums, target) == expected_output

@@ -25,11 +25,12 @@ Constraints:
 - nums contains distinct values sorted in ascending order
 - -10^4 <= target <= 10^4
 """
-from utils.test_runner import run_tests
+import pytest
+from typing import List, Tuple
 
 
 class Solution:
-    def searchInsert(self, nums, target):
+    def searchInsert(self, nums: List[int], target: int) -> int:
         """
         Approach:
         Use binary search to find the insertion position:
@@ -61,16 +62,17 @@ class Solution:
         return left
 
 
-if __name__ == "__main__":
-    solution = Solution()
-    test_cases = [
-        # Format: ((nums, target), expected_output)
-        (([1, 3, 5, 6], 5), 2),
-        (([1, 3, 5, 6], 2), 1),
-        (([1, 3, 5, 6], 7), 4),
-        (([1, 3, 5, 6], 0), 0),
-        (([1], 0), 0),
-        (([1], 2), 1),
-    ]
+test_cases = [
+    ([1, 3, 5, 6], 5, 2),
+    ([1, 3, 5, 6], 2, 1),
+    ([1, 3, 5, 6], 7, 4),
+    ([1, 3, 5, 6], 0, 0),
+    ([1], 0, 0),
+    ([1], 2, 1),
+]
 
-    run_tests(solution.searchInsert, test_cases)
+
+@pytest.mark.parametrize("nums, target, expected_output", test_cases)
+def test_searchInsert(nums: List[int], target: int, expected_output: int):
+    solution = Solution()
+    assert solution.searchInsert(nums, target) == expected_output
