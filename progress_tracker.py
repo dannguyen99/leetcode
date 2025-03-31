@@ -122,6 +122,7 @@ def update_readme_summary_table(
             "dynamic_programming",
             "graph",
             "linked_list",
+            "stack",
             "string",
             "tree",
         ]
