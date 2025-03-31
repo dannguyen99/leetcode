@@ -16,3 +16,4 @@
 | 20. Valid Parentheses | String | Easy | 2025-03-28 | 2025-03-28 | |
 | 206. Reverse Linked List | Linked List | Easy | 2025-03-28 | 2025-03-28 | |
 | 3. Longest Substring Without Repeating Characters | String | Medium | 2025-03-28 | 2025-03-28 | |
+| 155. Min Stack | Stack | Easy | 2025-03-31 | 2025-03-31 | |

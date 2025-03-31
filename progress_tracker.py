@@ -18,6 +18,7 @@ def update_progress():
         "dynamic_programming",
         "graph",
         "linked_list",
+        "stack",
         "string",
         "tree",
     ]

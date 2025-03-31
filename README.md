@@ -15,6 +15,7 @@ My solutions to LeetCode problems, organized by data structure and algorithm.
 - [Dynamic Programming](./problems/dynamic_programming/)
 - [Graph](./problems/graph/)
 - [Linked List](./problems/linked_list/)
+- [Stack](./problems/stack/)
 - [String](./problems/string/)
 - [Tree](./problems/tree/)
 
@@ -27,9 +28,9 @@ My solutions to LeetCode problems, organized by data structure and algorithm.
 | Dynamic Programming | 0 | 0 | 0 | 0 |
 | Graph | 0 | 0 | 0 | 0 |
 | Linked List | 3 | 1 | 0 | 4 |
-| String | 3 | 1 | 0 | 4 |
+| String | 2 | 1 | 0 | 3 |
 | Tree | 0 | 0 | 0 | 0 |
-| **Total** | **10** | **2** | **0** | **12** |
+| **Total** | **11** | **2** | **0** | **13** |
 
 
 

@@ -33,7 +33,7 @@ Constraints:
 
 import pytest
 from typing import Optional
-from utils.linked_list_utils import ListNode, create_linked_list, linked_list_to_list
+from utils.linked_list_utils import ListNode, create_linked_list
 
 
 class Solution:

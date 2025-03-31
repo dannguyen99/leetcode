@@ -1,5 +1,3 @@
-# --- File: [number]_[problem_name].py --- # Make sure filename starts with test_ e.g. test_1_two_sum.py
-
 """
 LeetCode Problem: [Problem Number] - [Problem Title]
 Link: https://leetcode.com/problems/[problem-slug]/
