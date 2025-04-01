@@ -19,3 +19,4 @@
 | 155. Min Stack | Stack | Medium | 2025-03-31 | 2025-03-31 | |
 | 703. Kth Largest Element In A Stream | Tree | Easy | 2025-04-01 | 2025-04-01 | |
 | 94. Binary Tree Inorder Traversal | Tree | Easy | 2025-04-01 | 2025-04-01 | |
+| 144. Binary Tree Preorder Traversal | Tree | Easy | 2025-04-01 | 2025-04-01 | |
