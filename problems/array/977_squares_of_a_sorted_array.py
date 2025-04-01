@@ -23,7 +23,7 @@ Constraints:
 - nums is sorted in non-decreasing order.
 """
 import pytest
-from typing import List, Tuple
+from typing import List
 
 
 class Solution:

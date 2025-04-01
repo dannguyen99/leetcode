@@ -5,7 +5,6 @@ Updates the README.md with current progress stats
 
 import os
 import re
-from collections import defaultdict
 from datetime import date
 import pandas as pd  # Using pandas can simplify CSV/Markdown table parsing/writing
 

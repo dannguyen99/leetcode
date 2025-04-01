@@ -29,7 +29,7 @@ Constraints:
 - Only one valid answer exists.
 """
 import pytest
-from typing import List, Tuple
+from typing import List
 
 
 class Solution:

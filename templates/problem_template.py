@@ -36,7 +36,6 @@ class Solution:
             [Description of return value]
         """
         # Your solution here
-        pass
 
 
 # --- Test Section ---
@@ -54,7 +53,7 @@ test_data = [
 # Adjust parameter names ("param1, param2, expected") to match test_data structure
 @pytest.mark.parametrize("param1, param2, expected", test_data)
 def test_solution(param1, param2, expected):
-    solution = Solution()
+    Solution()
 
     # --- Adapt based on problem type ---
     # Example for simple types:

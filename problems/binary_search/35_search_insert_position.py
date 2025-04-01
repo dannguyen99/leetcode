@@ -26,7 +26,7 @@ Constraints:
 - -10^4 <= target <= 10^4
 """
 import pytest
-from typing import List, Tuple
+from typing import List
 
 
 class Solution:

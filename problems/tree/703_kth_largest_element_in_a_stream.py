@@ -40,7 +40,6 @@ Constraints:
 - At most 10^4 calls will be made to add.
 - It is guaranteed that there will be at least k elements in the array when you search for the kth largest element.
 """
-import pytest
 import heapq  # <--- Needed for heap implementation
 from typing import List
 
