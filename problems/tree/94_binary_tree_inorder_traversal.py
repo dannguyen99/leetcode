@@ -56,49 +56,58 @@ class Solution:
         result = []
 
         # Example: Recursive helper function structure (you'll need to implement it)
-        # def traverse(node):
+        # def traverse(node: TreeNode):
         #     if node:
         #         # 1. Traverse left subtree
+        #         traverse(node.left)
         #         # 2. Visit root node
+        #         result.append(node.val)
         #         # 3. Traverse right subtree
-        #         pass
+        #         traverse(node.right)
         # traverse(root)
 
         # Example: Iterative structure using a stack (you'll need to implement it)
-        # stack = []
-        # current = root
-        # while current or stack:
-        #     # Logic to go left and push onto stack
-        #     # Logic to pop, visit, and go right
-        #     pass
+        stack = []
+        current = root
+        while current or stack:
+            # Logic to go left and push onto stack
+            if current:
+                stack.append(current)
+                current = current.left
+            # Logic to pop, visit, and go right
+            else:
+                current = stack.pop()
+                result.append(current.val)
+                current = current.right
 
-        return result  # Replace with your actual implementation
+        return result
 
 
 # --- Test Section ---
 
 # Define test cases as a list of tuples
 # Format: (input_tree_list, expected_output_list)
-# test_data = [
-#     ([1, None, 2, 3], [1, 3, 2]),
-#     ([], []),
-#     ([1], [1]),
-#     ([1, 2, 3], [2, 1, 3]), # Simple balanced tree
-#     ([3, 1, None, None, 2], [1, 2, 3]), # Tree with right child having left child
-#     ([2, 3, None, 1], [1, 3, 2]), # Tree requiring deeper left traversal
-# ]
+test_data = [
+    ([1, None, 2, 3], [1, 3, 2]),
+    ([], []),
+    ([1], [1]),
+    ([1, 2, 3], [2, 1, 3]),  # Simple balanced tree
+    ([3, 1, None, None, 2], [1, 2, 3]),  # Tree with right child having left child
+    ([2, 3, None, 1], [1, 3, 2]),  # Tree requiring deeper left traversal
+]
 
-# # Use pytest.mark.parametrize to create tests for each case
-# @pytest.mark.parametrize("tree_list, expected", test_data)
-# def test_solution(tree_list, expected):
-#     solution = Solution()
-#     # Use the imported helper function to create the tree
-#     root_node = create_binary_tree(tree_list)
-#     result = solution.inorderTraversal(root_node)
-#     assert result == expected
+# Use pytest.mark.parametrize to create tests for each case
+@pytest.mark.parametrize("tree_list, expected", test_data)
+def test_solution(tree_list, expected):
+    solution = Solution()
+    # Use the imported helper function to create the tree
+    root_node = create_binary_tree(tree_list)
+    result = solution.inorderTraversal(root_node)
+    assert result == expected
 
-# # You can add more specific test functions if needed
-# def test_edge_case_single_node():
-#    solution = Solution()
-#    root = TreeNode(5) # TreeNode is now imported
-#    assert solution.inorderTraversal(root) == [5]
+
+# You can add more specific test functions if needed
+def test_edge_case_single_node():
+    solution = Solution()
+    root = TreeNode(5)  # TreeNode is now imported
+    assert solution.inorderTraversal(root) == [5]
