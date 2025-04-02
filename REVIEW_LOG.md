@@ -21,3 +21,4 @@
 | 94. Binary Tree Inorder Traversal | Tree | Easy | 2025-04-01 | 2025-04-01 | |
 | 144. Binary Tree Preorder Traversal | Tree | Easy | 2025-04-01 | 2025-04-01 | |
 | 145. Binary Tree Postorder Traversal | Tree | Easy | 2025-04-02 | 2025-04-02 | |
+| 102. Binary Tree Level Order Traversal | Tree | Medium | 2025-04-02 | 2025-04-02 | |
