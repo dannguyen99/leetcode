@@ -44,7 +44,19 @@ class Solution:
         # --- Implement your solution here ---
         if not root:
             return True
-        return self.isMirror(root.left, root.right)
+        queue = deque([[root.left, root.right]])
+        while queue:
+            node_1, node_2 = queue.popleft()
+            if not node_1 and not node_2:
+                continue
+            elif not node_1 or not node_2:
+                return False
+            elif node_1.val == node_2.val:
+                queue.append([node_1.left, node_2.right])
+                queue.append([node_1.right, node_2.left])
+            else:
+                return False
+        return True
 
     # --- Helper methods if needed (e.g., for recursion) ---
     def isMirror(
