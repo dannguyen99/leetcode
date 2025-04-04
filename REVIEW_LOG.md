@@ -25,3 +25,4 @@
 | 101. Symmetric Tree | Tree | Easy | 2025-04-02 | 2025-04-02 | |
 | 167. Two Sum Ii | Array | Medium | 2025-04-04 | 2025-04-04 | |
 | 11. Container With Most Water | Array | Medium | 2025-04-04 | 2025-04-04 | |
+| 128. Longest Consecutive Sequence | Array | Medium | 2025-04-04 | 2025-04-04 | |
