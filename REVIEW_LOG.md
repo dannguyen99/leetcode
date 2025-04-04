@@ -26,3 +26,4 @@
 | 167. Two Sum Ii | Array | Medium | 2025-04-04 | 2025-04-04 | |
 | 11. Container With Most Water | Array | Medium | 2025-04-04 | 2025-04-04 | |
 | 128. Longest Consecutive Sequence | Array | Medium | 2025-04-04 | 2025-04-04 | |
+| 49. Group Anagrams | String | Medium | 2025-04-04 | 2025-04-04 | |
