@@ -30,8 +30,8 @@ My solutions to LeetCode problems, organized by data structure and algorithm.
 | Linked List | 3 | 1 | 0 | 4 |
 | Stack | 1 | 1 | 0 | 2 |
 | String | 2 | 2 | 0 | 4 |
-| Tree | 5 | 1 | 0 | 6 |
-| **Total** | **15** | **8** | **0** | **23** |
+| Tree | 6 | 1 | 0 | 7 |
+| **Total** | **16** | **8** | **0** | **24** |
 
 
 

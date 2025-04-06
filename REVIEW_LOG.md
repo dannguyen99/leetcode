@@ -27,3 +27,4 @@
 | 11. Container With Most Water | Array | Medium | 2025-04-04 | 2025-04-04 | |
 | 128. Longest Consecutive Sequence | Array | Medium | 2025-04-04 | 2025-04-04 | |
 | 49. Group Anagrams | String | Medium | 2025-04-04 | 2025-04-04 | |
+| 104. Maximum Depth Of Binary Tree | Tree | Easy | 2025-04-06 | 2025-04-06 | |
