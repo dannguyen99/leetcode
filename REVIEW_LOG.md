@@ -30,3 +30,4 @@
 | 104. Maximum Depth Of Binary Tree | Tree | Easy | 2025-04-06 | 2025-04-06 | |
 | 347. Top K Frequent Element | Array | Medium | 2025-04-07 | 2025-04-07 | |
 | 215. Kth Largest Element In An Array | Array | Medium | 2025-04-08 | 2025-04-08 | |
+| 973. K Closest Points To Origin | Array | Medium | 2025-04-08 | 2025-04-08 | |
