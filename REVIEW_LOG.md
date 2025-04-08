@@ -31,3 +31,4 @@
 | 347. Top K Frequent Element | Array | Medium | 2025-04-07 | 2025-04-07 | |
 | 215. Kth Largest Element In An Array | Array | Medium | 2025-04-08 | 2025-04-08 | |
 | 973. K Closest Points To Origin | Array | Medium | 2025-04-08 | 2025-04-08 | |
+| 567. Permutation In String | String | Medium | 2025-04-08 | 2025-04-08 | |
