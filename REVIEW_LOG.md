@@ -35,3 +35,4 @@
 | 217. Contains Duplicate | Array | Easy | 2025-04-08 | 2025-04-08 | |
 | 78. Subsets | Array | Medium | 2025-04-09 | 2025-04-09 | |
 | 77. Combinations | Backtracking | Medium | 2025-04-09 | 2025-04-09 | |
+| 121. Best Time To Buy And Sell Stock | Array | Easy | 2025-04-09 | 2025-04-09 | |
