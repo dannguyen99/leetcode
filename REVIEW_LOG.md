@@ -33,3 +33,4 @@
 | 973. K Closest Points To Origin | Array | Medium | 2025-04-08 | 2025-04-08 | |
 | 567. Permutation In String | String | Medium | 2025-04-08 | 2025-04-08 | |
 | 217. Contains Duplicate | Array | Easy | 2025-04-08 | 2025-04-08 | |
+| 78. Subsets | Array | Medium | 2025-04-09 | 2025-04-09 | |
