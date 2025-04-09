@@ -8,19 +8,22 @@ import re
 from datetime import date
 import pandas as pd  # Using pandas can simplify CSV/Markdown table parsing/writing
 
+categories = [
+    "array",
+    "binary_search",
+    "dynamic_programming",
+    "graph",
+    "linked_list",
+    "stack",
+    "string",
+    "tree",
+    "backtracking",
+]
+
 
 def update_progress():
     """Scan problem directories and update README with progress statistics"""
-    categories = [
-        "array",
-        "binary_search",
-        "dynamic_programming",
-        "graph",
-        "linked_list",
-        "stack",
-        "string",
-        "tree",
-    ]
+
     difficulties = ["Easy", "Medium", "Hard"]
 
     # Initialize counters
@@ -114,17 +117,6 @@ def update_readme_summary_table(
         new_table = "## Progress Tracking\n\n"
         new_table += "| Category | Easy | Medium | Hard | Total |\n"
         new_table += "|----------|------|--------|------|-------|\n"
-
-        categories = [
-            "array",
-            "binary_search",
-            "dynamic_programming",
-            "graph",
-            "linked_list",
-            "stack",
-            "string",
-            "tree",
-        ]
 
         for category in categories:
             category_name = category.replace("_", " ").title()
