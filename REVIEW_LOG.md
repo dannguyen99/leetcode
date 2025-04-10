@@ -37,3 +37,4 @@
 | 77. Combinations | Backtracking | Medium | 2025-04-09 | 2025-04-09 | |
 | 121. Best Time To Buy And Sell Stock | Array | Easy | 2025-04-09 | 2025-04-09 | |
 | 200. Numbers Of Islands | Graph | Medium | 2025-04-10 | 2025-04-10 | |
+| 994. Rotting Oranges | Array | Medium | 2025-04-10 | 2025-04-10 | |
