@@ -43,3 +43,4 @@
 | 198. House Robber | Dynamic Programming | Medium | 2025-04-11 | 2025-04-11 | |
 | 136. Single Number | Array | Easy | 2025-04-11 | 2025-04-11 | |
 | 100. Same Tree | Tree | Easy | 2025-04-11 | 2025-04-11 | |
+| 169. Majority Element | Array | Easy | 2025-04-11 | 2025-04-11 | |
