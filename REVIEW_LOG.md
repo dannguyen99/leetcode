@@ -39,3 +39,4 @@
 | 200. Numbers Of Islands | Graph | Medium | 2025-04-10 | 2025-04-10 | |
 | 994. Rotting Oranges | Array | Medium | 2025-04-10 | 2025-04-10 | |
 | 226. Invert Binary Tree | Tree | Easy | 2025-04-10 | 2025-04-10 | |
+| 70. Climbing Stairs | Dynamic Programming | Easy | 2025-04-11 | 2025-04-11 | |

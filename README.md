@@ -25,14 +25,14 @@ My solutions to LeetCode problems, organized by data structure and algorithm.
 |----------|------|--------|------|-------|
 | Array | 4 | 6 | 0 | 10 |
 | Binary Search | 2 | 0 | 0 | 2 |
-| Dynamic Programming | 0 | 0 | 0 | 0 |
+| Dynamic Programming | 1 | 0 | 0 | 1 |
 | Graph | 0 | 2 | 0 | 2 |
 | Linked List | 3 | 1 | 0 | 4 |
 | Stack | 1 | 1 | 0 | 2 |
 | String | 2 | 3 | 0 | 5 |
 | Tree | 7 | 1 | 0 | 8 |
 | Backtracking | 0 | 2 | 0 | 2 |
-| **Total** | **19** | **16** | **0** | **35** |
+| **Total** | **20** | **16** | **0** | **36** |
 
 
 
