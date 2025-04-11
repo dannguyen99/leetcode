@@ -41,3 +41,4 @@
 | 226. Invert Binary Tree | Tree | Easy | 2025-04-10 | 2025-04-10 | |
 | 70. Climbing Stairs | Dynamic Programming | Easy | 2025-04-11 | 2025-04-11 | |
 | 198. House Robber | Dynamic Programming | Medium | 2025-04-11 | 2025-04-11 | |
+| 136. Single Number | Array | Easy | 2025-04-11 | 2025-04-11 | |
