@@ -45,3 +45,4 @@
 | 100. Same Tree | Tree | Easy | 2025-04-11 | 2025-04-11 | |
 | 169. Majority Element | Array | Easy | 2025-04-11 | 2025-04-11 | |
 | 133. Clone Graph | Graph | Medium | 2025-04-12 | 2025-04-12 | |
+| 207. Course Schedule | Graph | Medium | 2025-04-14 | 2025-04-14 | |
