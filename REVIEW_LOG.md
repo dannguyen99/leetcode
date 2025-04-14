@@ -49,3 +49,4 @@
 | 210. Course Schedule Ii | Graph | Medium | 2025-04-14 | 2025-04-14 | |
 | 743. Network Delay Time | Graph | Medium | 2025-04-14 | 2025-04-14 | |
 | 53. Maximum Subarray | Dynamic Programming | Medium | 2025-04-14 | 2025-04-14 | |
+| 383. Ransom Note | String | Easy | 2025-04-14 | 2025-04-14 | |
