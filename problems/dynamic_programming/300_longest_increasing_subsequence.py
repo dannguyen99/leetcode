@@ -39,8 +39,8 @@ class Solution:
         [Explain your approach here - What does the DP state `dp[i]` represent?
          How can you calculate `dp[i]` based on previous values `dp[j]` where j < i?]
 
-        Time Complexity: O(?)
-        Space Complexity: O(?)
+        Time Complexity: O(N logn): Going through each element once, use binary search to keep a sorted list.
+        Space Complexity: O(N)
 
         Args:
             nums (List[int]): The input array of integers.
