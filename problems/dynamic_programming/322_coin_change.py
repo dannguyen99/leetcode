@@ -113,25 +113,6 @@ class Solution:
 
 # --- Test Section ---
 
-# Define test cases as a list of tuples
-# Format: (coins_list, amount_target, expected_output)
-test_data = [
-    ([1, 2, 5], 11, 3),
-    ([2], 3, -1),
-    ([1], 0, 0),
-    ([1], 1, 1),
-    ([1], 2, 2),
-    ([186, 419, 83, 408], 6249, 20),  # A slightly more complex case
-    ([], 1, -1),  # Edge case: no coins
-    (
-        [1, 2, 5],
-        -1,
-        -1,
-    ),  # Edge case: negative amount (based on constraints amount >= 0, but good to consider)
-    # The actual expected output for amount=0 is 0 per Example 3, negative amount test case may need adjustment or clarification based on assumptions.
-    # Let's stick to constraint examples for now.
-]
-
 # Adjusting test data based on constraints (amount >= 0)
 test_data = [
     ([1, 2, 5], 11, 3),

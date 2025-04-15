@@ -51,3 +51,4 @@
 | 53. Maximum Subarray | Dynamic Programming | Medium | 2025-04-14 | 2025-04-14 | |
 | 383. Ransom Note | String | Easy | 2025-04-14 | 2025-04-14 | |
 | 322. Coin Change | Dynamic Programming | Medium | 2025-04-15 | 2025-04-15 | |
+| 300. Longest Increasing Subsequence | Dynamic Programming | Medium | 2025-04-15 | 2025-04-15 | |
