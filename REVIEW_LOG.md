@@ -56,3 +56,4 @@
 | 98. Validate Binary Search Tree | Tree | Medium | 2025-04-16 | 2025-04-16 | |
 | 230. Kth Smallest Element In A Bst | Tree | Medium | 2025-04-16 | 2025-04-16 | |
 | 9. Palindrome Number | String | Easy | 2025-04-16 | 2025-04-16 | |
+| 283. Move Zeroes | Array | Easy | 2025-04-16 | 2025-04-16 | |
