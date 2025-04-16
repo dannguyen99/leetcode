@@ -70,9 +70,3 @@ def test_solution(param1, param2, expected):
     # Default assert if no special handling needed
     # assert solution.solution_method(param1, param2) == expected
     pass  # Remove pass once assert logic is in place
-
-
-# You can add more specific test functions if needed
-# def test_edge_case_empty_input():
-#    solution = Solution()
-#    assert solution.solution_method(...) == ...

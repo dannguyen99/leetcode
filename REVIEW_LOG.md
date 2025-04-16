@@ -53,3 +53,4 @@
 | 322. Coin Change | Dynamic Programming | Medium | 2025-04-15 | 2025-04-15 | |
 | 300. Longest Increasing Subsequence | Dynamic Programming | Medium | 2025-04-15 | 2025-04-15 | |
 | 876. Middle Of The Linked List | Linked List | Easy | 2025-04-15 | 2025-04-15 | |
+| 98. Validate Binary Search Tree | Tree | Medium | 2025-04-16 | 2025-04-16 | |
