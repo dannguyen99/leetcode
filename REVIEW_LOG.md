@@ -58,3 +58,4 @@
 | 9. Palindrome Number | String | Easy | 2025-04-16 | 2025-04-16 | |
 | 283. Move Zeroes | Array | Easy | 2025-04-16 | 2025-04-16 | |
 | 199. Binary Tree Right Side View | Tree | Medium | 2025-04-17 | 2025-04-17 | |
+| 46. Permutations | Backtracking | Medium | 2025-04-17 | 2025-04-17 | |
