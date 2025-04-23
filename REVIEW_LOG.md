@@ -62,3 +62,4 @@
 | 66. Plus One | Array | Easy | 2025-04-17 | 2025-04-17 | |
 | 213. House Robber Ii | Dynamic Programming | Medium | 2025-04-18 | 2025-04-18 | |
 | 205. Isomorphic Strings | Tree | Easy | 2025-04-22 | 2025-04-22 | |
+| 387. First Unique Character In String | String | Easy | 2025-04-23 | 2025-04-23 | |
