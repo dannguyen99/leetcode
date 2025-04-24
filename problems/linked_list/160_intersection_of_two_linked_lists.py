@@ -31,11 +31,26 @@ class Solution:
         self, headA: ListNode, headB: ListNode
     ) -> Optional[ListNode]:
         """
-        Approach:
-        [Explain your approach here - e.g., Hash Set, Two Pointers]
+        Approach: Two Pointers
+        1. Initialize two pointers, pA at headA and pB at headB.
+        2. Iterate while pA is not equal to pB:
+           - If pA reaches the end of list A (pA is None), redirect it to headB.
+           - Otherwise, advance pA to pA.next.
+           - If pB reaches the end of list B (pB is None), redirect it to headA.
+           - Otherwise, advance pB to pB.next.
+        3. If the pointers meet (pA == pB), they are at the intersection node
+           (or both are None if there's no intersection). Return pA (or pB).
 
-        Time Complexity: O(?)
-        Space Complexity: O(?)
+        Why it works:
+        - If the lists intersect, let len(A) = M, len(B) = N, length of common part = C.
+        - Pointer pA travels M-C steps to the intersection, then N steps (through B). Total M-C+N.
+        - Pointer pB travels N-C steps to the intersection, then M steps (through A). Total N-C+M.
+        - Both pointers travel the same total distance (M+N-C) before meeting at the intersection.
+        - If there's no intersection, pA travels M+N, pB travels N+M. They will both become None
+          at the same time after traversing both lists, and the loop terminates returning None.
+
+        Time Complexity: O(M + N) - Each pointer traverses at most M+N nodes.
+        Space Complexity: O(1) - Only two extra pointers are used.
 
         Args:
             headA (ListNode): The head of the first linked list.
@@ -44,22 +59,21 @@ class Solution:
         Returns:
             Optional[ListNode]: The intersecting node, or None if no intersection.
         """
-        # Your solution here
-        visited = set()
-        cur_a = headA
-        cur_b = headB
-        while cur_a or cur_b:
-            if cur_a in visited:
-                return cur_a
-            elif cur_a:
-                visited.add(cur_a)
-                cur_a = cur_a.next
-            if cur_b in visited:
-                return cur_b
-            elif cur_b:
-                visited.add(cur_b)
-                cur_b = cur_b.next
-        return None
+        # Handle edge case of empty lists
+        if not headA or not headB:
+            return None
+
+        pA = headA
+        pB = headB
+
+        while pA != pB:
+            # Advance pA, redirecting to headB if it reaches the end of A
+            pA = pA.next if pA else headB
+            # Advance pB, redirecting to headA if it reaches the end of B
+            pB = pB.next if pB else headA
+
+        # If pA == pB, they are either at the intersection node or both are None
+        return pA
 
 
 # --- Test Section ---
