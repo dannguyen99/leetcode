@@ -65,3 +65,4 @@
 | 387. First Unique Character In String | String | Easy | 2025-04-23 | 2025-04-23 | |
 | 160. Intersection Of Two Linked Lists | Linked List | Easy | 2025-04-23 | 2025-04-23 | |
 | 15. 3Sum | Array | Medium | 2025-04-24 | 2025-04-24 | |
+| 28. Find The Index Of The First Occurrence In A String | String | Easy | 2025-04-24 | 2025-04-24 | |
