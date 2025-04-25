@@ -66,3 +66,4 @@
 | 160. Intersection Of Two Linked Lists | Linked List | Easy | 2025-04-23 | 2025-04-23 | |
 | 15. 3Sum | Array | Medium | 2025-04-24 | 2025-04-24 | |
 | 28. Find The Index Of The First Occurrence In A String | String | Easy | 2025-04-24 | 2025-04-24 | |
+| 56. Merge Intervals | Array | Medium | 2025-04-25 | 2025-04-25 | |
