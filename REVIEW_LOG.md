@@ -67,3 +67,4 @@
 | 15. 3Sum | Array | Medium | 2025-04-24 | 2025-04-24 | |
 | 28. Find The Index Of The First Occurrence In A String | String | Easy | 2025-04-24 | 2025-04-24 | |
 | 56. Merge Intervals | Array | Medium | 2025-04-25 | 2025-04-25 | |
+| 295. Find Median From Data Stream | Tree | Hard | 2025-04-26 | 2025-04-26 | |
