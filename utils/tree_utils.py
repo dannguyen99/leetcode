@@ -108,3 +108,16 @@ def tree_to_level_order_list(root: Optional[TreeNode]) -> List[Optional[int]]:
         output.pop()
 
     return output
+
+
+# Helper function specific to finding nodes for LCA tests
+def find_node(root: Optional[TreeNode], val: int) -> Optional[TreeNode]:
+    """Finds the node with the given value in the tree."""
+    if not root:
+        return None
+    if root.val == val:
+        return root
+    left_found = find_node(root.left, val)
+    if left_found:
+        return left_found
+    return find_node(root.right, val)

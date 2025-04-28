@@ -70,3 +70,4 @@
 | 295. Find Median From Data Stream | Tree | Hard | 2025-04-26 | 2025-04-26 | |
 | 33. Search In Rotated Sorted Array | Binary Search | Medium | 2025-04-26 | 2025-04-26 | |
 | 268. Missing Number | Array | Easy | 2025-04-26 | 2025-04-26 | |
+| 236. Lowest Common Ancestor Of A Binary Tree | Tree | Medium | 2025-04-28 | 2025-04-28 | |
