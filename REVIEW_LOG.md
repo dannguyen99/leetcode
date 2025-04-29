@@ -75,3 +75,4 @@
 | 695. Max Area Of Island | Array | Medium | 2025-04-29 | 2025-04-29 | |
 | 79. Word Search | Backtracking | Medium | 2025-04-29 | 2025-04-29 | |
 | 234. Palindrome Linked List | Linked List | Easy | 2025-04-29 | 2025-04-29 | |
+| 110. Balanced Binary Tree | Tree | Easy | 2025-04-29 | 2025-04-29 | |
