@@ -27,13 +27,9 @@ import pytest
 from typing import Optional
 
 # Definition for singly-linked list (assuming it's not in utils or defining here for clarity)
-class ListNode:
-    def __init__(self, val=0, next=None):
-        self.val = val
-        self.next = next
 
 
-from utils.linked_list_utils import create_linked_list, linked_list_to_list
+from utils.linked_list_utils import ListNode, create_linked_list, linked_list_to_list
 
 # Solution Class - Implement the logic here
 class Solution:
