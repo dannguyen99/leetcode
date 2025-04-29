@@ -73,3 +73,4 @@
 | 236. Lowest Common Ancestor Of A Binary Tree | Tree | Medium | 2025-04-28 | 2025-04-28 | |
 | 733. Flood Fill | Array | Easy | 2025-04-28 | 2025-04-28 | |
 | 695. Max Area Of Island | Array | Medium | 2025-04-29 | 2025-04-29 | |
+| 79. Word Search | Backtracking | Medium | 2025-04-29 | 2025-04-29 | |
