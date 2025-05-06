@@ -78,3 +78,4 @@
 | 110. Balanced Binary Tree | Tree | Easy | 2025-04-29 | 2025-04-29 | |
 | 5. Longest Palindromic Substring | Dynamic Programming | Medium | 2025-05-06 | 2025-05-06 | |
 | 1143. Longest Common Subsequence | Dynamic Programming | Medium | 2025-05-06 | 2025-05-06 | |
+| 139. Word Break | Dynamic Programming | Medium | 2025-05-06 | 2025-05-06 | |
