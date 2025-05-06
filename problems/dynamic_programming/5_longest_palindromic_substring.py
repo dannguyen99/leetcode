@@ -23,8 +23,8 @@ class Solution:
         Approach:
         [Explain your approach here - e.g., Expand Around Center, Dynamic Programming Table]
 
-        Time Complexity: O(?)
-        Space Complexity: O(?)
+        Time Complexity: O(N^2)
+        Space Complexity: O(1)
 
         Args:
             s (str): The input string.
