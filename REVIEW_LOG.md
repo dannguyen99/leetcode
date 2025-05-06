@@ -79,3 +79,4 @@
 | 5. Longest Palindromic Substring | Dynamic Programming | Medium | 2025-05-06 | 2025-05-06 | |
 | 1143. Longest Common Subsequence | Dynamic Programming | Medium | 2025-05-06 | 2025-05-06 | |
 | 139. Word Break | Dynamic Programming | Medium | 2025-05-06 | 2025-05-06 | |
+| 26. Remove Duplicates From Sorted Array | Array | Easy | 2025-05-06 | 2025-05-06 | |
