@@ -24,7 +24,7 @@ My solutions to LeetCode problems, organized by data structure and algorithm.
 | Category | Easy | Medium | Hard | Total |
 |----------|------|--------|------|-------|
 | Array | 11 | 9 | 0 | 20 |
-| Binary Search | 2 | 1 | 0 | 3 |
+| Binary Search | 2 | 2 | 0 | 4 |
 | Dynamic Programming | 1 | 8 | 0 | 9 |
 | Graph | 0 | 6 | 0 | 6 |
 | Linked List | 6 | 1 | 0 | 7 |
@@ -32,7 +32,7 @@ My solutions to LeetCode problems, organized by data structure and algorithm.
 | String | 7 | 3 | 0 | 10 |
 | Tree | 9 | 5 | 1 | 15 |
 | Backtracking | 0 | 4 | 0 | 4 |
-| **Total** | **37** | **38** | **1** | **76** |
+| **Total** | **37** | **39** | **1** | **77** |
 
 
 

@@ -80,3 +80,4 @@
 | 1143. Longest Common Subsequence | Dynamic Programming | Medium | 2025-05-06 | 2025-05-06 | |
 | 139. Word Break | Dynamic Programming | Medium | 2025-05-06 | 2025-05-06 | |
 | 26. Remove Duplicates From Sorted Array | Array | Easy | 2025-05-06 | 2025-05-06 | |
+| 153. Find Minimum In Rotated Sorted Array | Binary Search | Medium | 2025-05-08 | 2025-05-08 | |
