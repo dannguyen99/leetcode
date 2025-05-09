@@ -82,3 +82,4 @@
 | 26. Remove Duplicates From Sorted Array | Array | Easy | 2025-05-06 | 2025-05-06 | |
 | 153. Find Minimum In Rotated Sorted Array | Binary Search | Medium | 2025-05-08 | 2025-05-08 | |
 | 417. Pacific Atlantic Water Flow | Graph | Medium | 2025-05-09 | 2025-05-09 | |
+| 22. Generate Parentheses | Backtracking | Medium | 2025-05-09 | 2025-05-09 | |

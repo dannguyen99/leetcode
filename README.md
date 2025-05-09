@@ -31,8 +31,8 @@ My solutions to LeetCode problems, organized by data structure and algorithm.
 | Stack | 1 | 1 | 0 | 2 |
 | String | 7 | 3 | 0 | 10 |
 | Tree | 9 | 5 | 1 | 15 |
-| Backtracking | 0 | 4 | 0 | 4 |
-| **Total** | **37** | **40** | **1** | **78** |
+| Backtracking | 0 | 5 | 0 | 5 |
+| **Total** | **37** | **41** | **1** | **79** |
 
 
 
