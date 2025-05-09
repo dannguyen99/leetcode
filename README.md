@@ -28,11 +28,11 @@ My solutions to LeetCode problems, organized by data structure and algorithm.
 | Dynamic Programming | 1 | 8 | 0 | 9 |
 | Graph | 0 | 7 | 0 | 7 |
 | Linked List | 6 | 1 | 0 | 7 |
-| Stack | 1 | 1 | 0 | 2 |
+| Stack | 2 | 1 | 0 | 3 |
 | String | 7 | 3 | 0 | 10 |
 | Tree | 9 | 5 | 1 | 15 |
 | Backtracking | 0 | 5 | 0 | 5 |
-| **Total** | **37** | **41** | **1** | **79** |
+| **Total** | **38** | **41** | **1** | **80** |
 
 
 
