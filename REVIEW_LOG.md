@@ -86,3 +86,4 @@
 | 225. Implement Stack Using Queues | Stack | Easy | 2025-05-09 | 2025-05-09 | |
 | 39. Combination Sum | Backtracking | Medium | 2025-05-12 | 2025-05-12 | |
 | 40. Combination Sum Ii | Backtracking | Medium | 2025-05-12 | 2025-05-12 | |
+| 47. Permutations Ii | Backtracking | Medium | 2025-05-12 | 2025-05-12 | |
