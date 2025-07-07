@@ -87,3 +87,5 @@
 | 39. Combination Sum | Backtracking | Medium | 2025-05-12 | 2025-05-12 | |
 | 40. Combination Sum Ii | Backtracking | Medium | 2025-05-12 | 2025-05-12 | |
 | 47. Permutations Ii | Backtracking | Medium | 2025-05-12 | 2025-05-12 | |
+| 42. Trapping Rain Water | Dynamic Programming | Hard | 2025-07-07 | 2025-07-07 | |
+| 88. Merge Sorted Array | Array | Easy | 2025-07-07 | 2025-07-07 | |
