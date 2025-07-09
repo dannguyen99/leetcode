@@ -91,3 +91,4 @@
 | 88. Merge Sorted Array | Array | Easy | 2025-07-07 | 2025-07-07 | |
 | 124. Binary Tree Maximum Path Sum | Tree | Hard | 2025-07-08 | 2025-07-08 | |
 | 392. Is Subsequence | String | Easy | 2025-07-09 | 2025-07-09 | |
+| 409. Longest Palindrome | String | Easy | 2025-07-09 | 2025-07-09 | |
